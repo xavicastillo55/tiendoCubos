@@ -1,32 +1,32 @@
 <template>
-  <v-footer class="bg-cyan-lighten-1 d-flex flex-column">
+  <v-footer class="bg-deep-purple-lighten-1 d-flex flex-column">
     <div>
       <v-btn variant="text" class="mx-2" rounded="xl">
-        <NuxtLink to="/">Home</NuxtLink>
+        <NuxtLink to="/" class="navigation">Home</NuxtLink>
       </v-btn>
       <v-btn variant="text" class="mx-2" rounded="xl">
-        <NuxtLink to="/inventary">Inventary</NuxtLink>
+        <NuxtLink to="/products" class="navigation">Inventary</NuxtLink>
       </v-btn>
       <v-btn variant="text" class="mx-2" rounded="xl">
-        <NuxtLink to="/about">About</NuxtLink>
+        <NuxtLink to="/about" class="navigation">About</NuxtLink>
       </v-btn>
       <v-btn variant="text" class="mx-2" rounded="xl">
-        <NuxtLink to="/contact">Contact Us</NuxtLink>
+        <NuxtLink to="/contact" class="navigation">Contact Us</NuxtLink>
       </v-btn>
     </div>
     <div>
       <span class="mx-2">
-        <a href="https://instagram.com/talcubo?igshid=YmMyMTA2M2Y">
+        <a href="https://instagram.com/talcubo?igshid=YmMyMTA2M2Y" class="social">
           <v-icon>mdi-instagram</v-icon>
         </a>
       </span>
       <span class="mx-2">
-        <a href="https://walink.co/c80ad7">
+        <a href="https://walink.co/c80ad7" class="social">
           <v-icon>mdi-whatsapp</v-icon>
         </a>
       </span>
       <span class="mx-2">
-        <a href="https://www.facebook.com/tiendaalcubo">
+        <a href="https://www.facebook.com/tiendaalcubo" class="social">
           <v-icon>mdi-facebook</v-icon>
         </a>
       </span>
@@ -43,10 +43,10 @@ export default {};
 a {
   text-decoration: none;
 }
-button span a {
+.navigation {
   color: white;
 }
-div span a i {
+.social {
   color: black;
 }
 .v-footer {

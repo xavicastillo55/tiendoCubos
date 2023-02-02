@@ -52,7 +52,7 @@
 
 <script setup>
 const { product } = defineProps(["product"]);
-const rating = 4;
+let rating = 4;
 </script>
 
 <style scoped>

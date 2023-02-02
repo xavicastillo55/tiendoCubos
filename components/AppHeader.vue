@@ -1,15 +1,36 @@
 <template>
-  <v-app-bar
-      app
+  <v-app-bar app class="bg-deep-purple-lighten-3">
+    <img src="~/assets/img/LogoTTSmall.png" class="logo" />
+    <v-toolbar-title>
+      <NuxtLink to="/" class="navigation text-decoration-none"
+        >Tienda al Cubo</NuxtLink
+      ></v-toolbar-title
     >
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
-
-      <v-toolbar-title>Tienda al Cubo</v-toolbar-title>
-
-      <v-spacer></v-spacer>
-
-      <v-btn icon>
-        <v-icon>mdi-dots-vertical</v-icon>
+    <div>
+      <v-btn variant="text" class="mx-2" rounded="xl">
+        <NuxtLink to="/products" class="navigation text-decoration-none"
+          >Inventary</NuxtLink
+        >
       </v-btn>
-    </v-app-bar>
+      <v-btn variant="text" class="mx-2" rounded="xl">
+        <NuxtLink to="/about" class="navigation text-decoration-none"
+          >About</NuxtLink
+        >
+      </v-btn>
+      <v-btn variant="text" class="mx-2" rounded="xl">
+        <NuxtLink to="/contact" class="navigation text-decoration-none"
+          >Contact Us</NuxtLink
+        >
+      </v-btn>
+    </div>
+  </v-app-bar>
 </template>
+<style scoped>
+.navigation {
+  color: black;
+}
+.logo {
+  max-width: 60px;
+  max-height: 60px;
+}
+</style>

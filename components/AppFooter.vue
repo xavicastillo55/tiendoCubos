@@ -1,35 +1,22 @@
 <template>
-  <v-footer class="bg-deep-purple-lighten-1 d-flex flex-column">
-    <div>
-      <v-btn variant="text" class="mx-2" rounded="xl">
-        <NuxtLink to="/" class="navigation">Home</NuxtLink>
-      </v-btn>
-      <v-btn variant="text" class="mx-2" rounded="xl">
-        <NuxtLink to="/products" class="navigation">Inventary</NuxtLink>
-      </v-btn>
-      <v-btn variant="text" class="mx-2" rounded="xl">
-        <NuxtLink to="/about" class="navigation">About</NuxtLink>
-      </v-btn>
-      <v-btn variant="text" class="mx-2" rounded="xl">
-        <NuxtLink to="/contact" class="navigation">Contact Us</NuxtLink>
-      </v-btn>
-    </div>
+  <v-footer class="bg-grey-darken-4 d-flex flex-column">
     <div>
       <span class="mx-2">
-        <a
-          href="https://instagram.com/talcubo?igshid=YmMyMTA2M2Y"
-          class="social"
-        >
+        <a href="https://instagram.com/talcubo" class="social" target="_blank">
           <v-icon>mdi-instagram</v-icon>
         </a>
       </span>
       <span class="mx-2">
-        <a href="https://walink.co/c80ad7" class="social">
+        <a href="https://walink.co/c80ad7" target="_blank" class="social">
           <v-icon>mdi-whatsapp</v-icon>
         </a>
       </span>
       <span class="mx-2">
-        <a href="https://www.facebook.com/tiendaalcubo" class="social">
+        <a
+          href="https://www.facebook.com/tiendaalcubo"
+          target="_blank"
+          class="social"
+        >
           <v-icon>mdi-facebook</v-icon>
         </a>
       </span>
@@ -37,9 +24,11 @@
     <div
       class="text-center mt-1 text-subtitle-2 text-medium-emphasis font-weight-thin"
     >
-      <span>{{ new Date().getFullYear() }}</span> &copy;
-      <span class="">Tienda al Cubo</span> —
-      <span class="font-italic">mbuitragoc</span>
+      <p>
+        <span>{{ new Date().getFullYear() }}</span> &copy;
+        <span>Tienda al Cubo</span> —
+        <span class="font-italic">mbuitragoc</span>
+      </p>
     </div>
   </v-footer>
 </template>
@@ -50,13 +39,13 @@ export default {};
 a {
   text-decoration: none;
 }
-.navigation {
-  color: white;
-}
 .social {
-  color: black;
+  color: #BDBDBD;
 }
 .v-footer {
-  max-height: 100px;
+  max-height: 70px;
+}
+p {
+  color: #BDBDBD;
 }
 </style>

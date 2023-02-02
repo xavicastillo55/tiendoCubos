@@ -16,7 +16,10 @@
     </div>
     <div>
       <span class="mx-2">
-        <a href="https://instagram.com/talcubo?igshid=YmMyMTA2M2Y" class="social">
+        <a
+          href="https://instagram.com/talcubo?igshid=YmMyMTA2M2Y"
+          class="social"
+        >
           <v-icon>mdi-instagram</v-icon>
         </a>
       </span>
@@ -31,8 +34,12 @@
         </a>
       </span>
     </div>
-    <div class="text-center mt-1">
-      {{ new Date().getFullYear() }} — <strong>Tienda al Cubo</strong>
+    <div
+      class="text-center mt-1 text-subtitle-2 text-medium-emphasis font-weight-thin"
+    >
+      <span>{{ new Date().getFullYear() }}</span> &copy;
+      <span class="">Tienda al Cubo</span> —
+      <span class="font-italic">mbuitragoc</span>
     </div>
   </v-footer>
 </template>

@@ -9,7 +9,7 @@
     <div>
       <v-btn variant="text" class="mx-2" rounded="xl">
         <NuxtLink to="/products" class="navigation text-decoration-none"
-          >Inventary</NuxtLink
+          >Catalog</NuxtLink
         >
       </v-btn>
       <v-btn variant="text" class="mx-2" rounded="xl">

@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-row class="mx-1" align="center" justify="start">
+    <v-row align="center">
       <v-col cols="6">
         <v-img :src="product.image" alt="product image" class="detailImage">
         </v-img>

@@ -5,13 +5,12 @@
       class="text-capitalize"
     ></v-breadcrumbs>
     <v-container class="mt-2">
-      <v-row align="center" justify="space-around" class="mt-1">
-        <v-col cols="5" class="">
+      <v-row align="center" justify="space-around">
+        <v-col cols="12" md="6">
           <v-img :src="product.image" alt="product image" class="detailImage">
           </v-img>
         </v-col>
-        <v-spacer></v-spacer>
-        <v-col cols="6">
+        <v-col cols="9" md="6">
           <v-row>
             <p class="text-h4">{{ product.title }}</p>
           </v-row>

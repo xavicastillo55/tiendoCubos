@@ -7,4 +7,15 @@ export default defineNuxtConfig({
   build: {
     transpile: ["vuetify"],
   },
+  app: {
+    head: {
+      title: "Tienda al Cubo",
+      meta: [
+        {
+          name: "description",
+          content: "A catalog of different Rubik cubes and puzzl es",
+        },
+      ],
+    },
+  },
 });

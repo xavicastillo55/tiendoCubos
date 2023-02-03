@@ -10,7 +10,7 @@
     </div>
     <v-container v-else class="pa-1" fluid>
       <v-row class="mx-1">
-        <v-col v-for="prod in products" cols="4">
+        <v-col v-for="prod in products" cols="12" sm="6" lg="4">
           <ProductCard :product="prod" />
         </v-col>
       </v-row>
@@ -22,6 +22,10 @@
 const { pending, data: products } = await useLazyFetch(
   "https://fakestoreapi.com/products"
 );
+useHead({
+  title: "Catalogo Tienda al Cubo",
+  meta: [{ name: "description", content: "Catalogo de Cubos y puzzles" }],
+});
 </script>
 
 <style lang="scss" scoped></style>

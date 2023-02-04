@@ -27,14 +27,23 @@
           >Variante</v-chip
         >
       </div>
-      <v-btn rounded="lg" color="light-blue-accent-3" width="100%" class="mt-1">
-        <NuxtLink
-          :to="`/products/${product.id}`"
-          class="text-decoration-none"
-          style="color: white"
-          >Ver Detalles
-        </NuxtLink>
-      </v-btn>
+      <NuxtLink
+        :to="`/products/${product.id}`"
+        class="text-decoration-none"
+        style="color: white"
+        custom
+        v-slot="{ navigate }"
+      >
+        <v-btn
+          rounded="lg"
+          color="light-blue-accent-3"
+          width="100%"
+          class="mt-1"
+          @click="navigate"
+        >
+          Ver Detalles
+        </v-btn>
+      </NuxtLink>
     </v-card-text>
   </v-card>
 </template>

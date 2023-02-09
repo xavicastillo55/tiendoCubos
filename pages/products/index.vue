@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Product Page</h1>
+    <h1 class="ml-1">Inventario</h1>
     <div v-if="pending">
       Cargando...
       <v-progress-circular
@@ -19,9 +19,7 @@
 </template>
 
 <script setup>
-const { pending, data: products } = await useLazyFetch(
-  "https://fakestoreapi.com/products"
-);
+const { pending, result: products } = await $fetch("/api/queryCol?col=inventary");
 useHead({
   title: "Catalogo Tienda al Cubo",
   meta: [{ name: "description", content: "Catalogo de Cubos y puzzles" }],

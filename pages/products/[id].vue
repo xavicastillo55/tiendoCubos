@@ -1,9 +1,5 @@
 <template>
   <div>
-    <Head>
-      <Title> Tienda al Cubo {{ product.title }}</Title>
-      <Meta name="description" :content="product.description" />
-    </Head>
     <div v-if="pending">
       Cargando...
       <v-progress-circular
@@ -17,8 +13,14 @@
 
 <script setup>
 const { id } = useRoute().params;
-const uri = "https://fakestoreapi.com/products/" + id;
-const { pending, data: product } = await useLazyFetch(uri, { key: id });
+const { pending, result: product } = await $fetch(
+  `/api/queryDoc?col=inventary&id=${id}`
+);
+console.log(product);
+useHead({
+  title: `Tienda al Cubo ${product.title}`,
+  meta: [{ name: "description", content: `${product.description}` }],
+});
 </script>
 
 <style lang="scss" scoped></style>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div >
     <h1 class="ml-1">Inventario</h1>
     <div v-if="pending">
       Cargando...
@@ -10,7 +10,7 @@
     </div>
     <v-container v-else class="pa-1" fluid>
       <v-row class="mx-1">
-        <v-col v-for="prod in products" cols="12" sm="6" lg="4">
+        <v-col v-for="prod in products.sort((a, b) => (a.name > b.name) ? 1 : -1)" cols="12" sm="6" lg="4">
           <ProductCard :product="prod" />
         </v-col>
       </v-row>

@@ -1,5 +1,17 @@
-<template>
-  <v-footer class="bg-grey-darken-4 d-flex flex-column">
+<template clas="v-footer-margin">
+  <v-footer class="bg-grey-darken-4 d-flex flex-column" >
+    <div>
+      <span>Cubos Rubik </span>
+      <v-icon>mdi-cube-outline</v-icon>
+      <span> Rompecabezas </span>
+      <v-icon>mdi-cube-outline</v-icon>     
+      <span> Juegos de mesa </span>
+    </div>
+    <div>      
+      <span> Figuras de colección </span>
+      <v-icon>mdi-cube-outline</v-icon>
+      <span> Detalles y accesorios </span> 
+    </div>
     <div>
       <span class="mx-2">
         <a href="https://instagram.com/talcubo" class="social" target="_blank">
@@ -7,7 +19,7 @@
         </a>
       </span>
       <span class="mx-2">
-        <a href="https://walink.co/c80ad7" target="_blank" class="social">
+        <a href="https://wa.link/7xpqmm" target="_blank" class="social">
           <v-icon>mdi-whatsapp</v-icon>
         </a>
       </span>
@@ -15,7 +27,7 @@
         <a
           href="https://www.facebook.com/tiendaalcubo"
           target="_blank"
-          class="social"
+          class="social" 
         >
           <v-icon>mdi-facebook</v-icon>
         </a>
@@ -26,8 +38,7 @@
     >
       <p>
         <span>{{ new Date().getFullYear() }}</span> &copy;
-        <span>Tienda al Cubo</span> —
-        <span class="font-italic">mbuitragoc</span>
+        <span>Tienda al Cubo</span>        
       </p>
     </div>
   </v-footer>
@@ -43,8 +54,9 @@ a {
   color: #BDBDBD;
 }
 .v-footer {
-  max-height: 70px;
+  max-height: 14vh;
 }
+
 p {
   color: #BDBDBD;
 }
